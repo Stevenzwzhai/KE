@@ -1,6 +1,6 @@
 const ke = require('./lib/ke')
 const path = require('path')
-const bodyParse = require('./lib/body-parse')
+const bodyParse = require('./lib/body-parser')
 const app = ke();
 app.use(bodyParse)
 app.use(ke.static(path.join(__dirname, 'static')))
