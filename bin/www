@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+const http = require('http')
+const app = require('../app')
+http.createServer(app).listen(8181, function(){
+    console.log('server listen 8181')
+})
